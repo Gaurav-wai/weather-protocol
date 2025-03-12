@@ -1,0 +1,212 @@
+/* Global Styles */
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Search Box Visibility Fix */
+.search-box {
+    background: #444;  /* Lighter shade for contrast */
+    border: 1px solid #666; /* Subtle border */
+    color: white;
+    border-radius: 30px;
+    padding: 10px 15px;
+    padding-left: 40px; /* Space for icon */
+}
+
+.search-box::placeholder {
+    color: #bbb; /* Make placeholder visible */
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Make icon more visible */
+    font-size: 1.2rem;
+    color: #4caf50;
+}
+
+/* Location Button */
+.location-btn {
+    background: #4caf50;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+/* General Card Styles */
+.card {
+    border-radius: 15px;
+    background: #2a2a2a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Location & Weather Boxes */
+.location-box, .weather-box {
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.location-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Temperature & Weather Info */
+.temperature {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.small-text {
+    font-size: 0.9rem;
+}
+.weather-icon {
+    font-size: 50px;
+}
+
+/* Forecast Containers */
+.forecast-container {
+    background: #2e2e2e;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.forecast-day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.forecast-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.forecast-temp {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.forecast-date {
+    font-size: 14px;
+}
+
+/* 🌤️ Forecast List Styling */
+.forecast-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 12px 15px;
+}
+
+.list-group-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.forecast-temp {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.forecast-date {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* 🌤️ Forecast Card Styling */
+.forecast-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.list-group-item {
+    border: none;
+    padding: 12px 15px;
+}
+
+.list-group-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.forecast-temp {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.forecast-date, .forecast-time {
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+
+/* Style for the hourly forecast row */
+.hourly-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+/* Ensure each hourly forecast box looks clean */
+/* ⏰ Hourly Forecast Box */
+.hour-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    padding: 12px;
+    border-radius: 15px; /* Rounded corners */
+    text-align: center;
+    width: 80px; /* Smaller width */
+    height: 130px; /* Shorter height */
+    margin: 5px; /* Spacing between boxes */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌡️ Resize Weather Icons */
+.hour-box img {
+    width: 30px; /* Slightly smaller */
+    height: 30px;
+}
+
+/* 🕒 Time Display */
+.hour-box p:first-child {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* 📊 Temperature & Wind Speed */                                                   
+.hour-box p {
+    color: #ddd;
+    font-size: 14px;
+    margin: 2px 0;
+}
